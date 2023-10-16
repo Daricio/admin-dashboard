@@ -7,13 +7,17 @@
   box-sizing: inherit;
 }
 
-/* TODO: header layout */
+/* TODO: main section layout */
 body {
   margin: 0;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto 1fr;
+}
+
+div, ul {
+  border: 1px solid;
 }
 
 .sidebar {
@@ -32,4 +36,25 @@ body {
 .header {
   display: grid;
   grid-template-columns: 1fr auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  align-content: start;
+}
+
+.projects {
+  grid-row: 1 / 3;
+  /* height: 800px; */
+}
+
+.announcements {
+  width: 200px;
+  height: 400px;
+}
+
+.trending {
+  height: 300px;
 }
