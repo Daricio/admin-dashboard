@@ -7,7 +7,7 @@
   box-sizing: inherit;
 }
 
-/* TODO: sidebar layout */
+/* TODO: header layout */
 body {
   margin: 0;
   min-height: 100vh;
@@ -27,4 +27,9 @@ body {
 .sidebar nav {
   display: grid;
   gap: 4rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
