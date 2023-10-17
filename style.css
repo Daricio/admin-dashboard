@@ -16,18 +16,18 @@
   box-sizing: inherit;
 }
 
-/* TODO: fill some content, gather assets */
+/* TODO: sidebar styling */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 240px 1fr;
   grid-template-rows: auto 1fr;
 }
 
 div, ul {
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .sidebar {
@@ -37,15 +37,51 @@ div, ul {
   gap: 4rem;
   align-content: start;
   color: var(--sidebar-font);
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
-.sidebar nav {
+.branding,
+.nav li {
   display: grid;
-  gap: 4rem;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.branding {
+  font-size: 2.2rem;
+  gap: 1rem;
+  padding: 1.2rem 0 0 1.2rem;
+}
+
+.nav {
+  display: grid;
+  gap: 5rem;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.icon {
+  width: 20px;
 }
 
 .sidebar .icon {
   filter: invert(100%) sepia(5%) saturate(21%) hue-rotate(225deg) brightness(107%) contrast(105%);
+}
+
+.nav .icon {
+  margin: 0 2rem;
+}
+
+.branding .logo {
+  width: 40px;
 }
 
 .header {
