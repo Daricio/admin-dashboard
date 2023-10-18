@@ -86,8 +86,17 @@ div, ul {
 
 .header {
   display: grid;
+  /* grid-template-columns: 1fr auto; */
+  padding: 1.2rem 3.2rem;
+}
+
+.header-up {
+  display: grid;
   grid-template-columns: 1fr auto;
-  padding: 1.2rem 3rem;
+  /* grid-auto-flow: column; */
+  gap: 8rem;
+  align-items: center;
+  /* justify-content: space-between; */
 }
 
 .search {
@@ -96,7 +105,7 @@ div, ul {
   grid-template-columns: auto 1fr;
   justify-content: start;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .search label {
@@ -116,12 +125,41 @@ div, ul {
   font-size: 1.4rem;
   height: 2.8rem;
   padding: 0 1.2rem;
+  max-width: 600px;
 }
 
 /* .search-bar::-webkit-search-cancel-button {
   position: relative;
   right: 5px;
 } */
+
+.header-up-right {
+  justify-self: end;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.2rem;
+  margin-right: 2.6rem;
+  align-items: center;
+  /* min-width: 30%; */
+  /* justify-content: end; */
+}
+
+.current-user-info {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.2rem;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.current-user-icon {
+  width: 40px;
+  /* height: 40px; */
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 .main {
   display: grid;
@@ -138,7 +176,7 @@ div, ul {
 }
 
 .announcements {
-  width: 200px;
+  /* width: 200px; */
   height: 400px;
 }
 
@@ -147,7 +185,7 @@ div, ul {
 }
 
 .trending {
-  height: 300px;
+  /* height: 300px; */
 }
 
 .trending-items-container {
