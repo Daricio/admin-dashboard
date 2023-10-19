@@ -3,7 +3,8 @@
   font-size: 62.5%;
   --sidebar-background: #f43f5e;
   --sidebar-font: white;
-  --header-button: #f43f5e;
+  --header-button-background: #f43f5e;
+  --header-button-font: white;
   --search-bar: #fff1f2;
   --main-background: #fff1f2;
   --project-background: white;
@@ -32,7 +33,7 @@ div, ul {
 
 .sidebar {
   grid-row: 1 / 3;
-  background-color: #f43f5e;
+  background-color: var(--sidebar-background);
   display: grid;
   gap: 4rem;
   align-content: start;
@@ -87,7 +88,11 @@ div, ul {
 .header {
   display: grid;
   /* grid-template-columns: 1fr auto; */
-  padding: 1.2rem 3.2rem;
+  padding: 1.4rem 3.4rem;
+  gap: 2rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .header-up {
@@ -138,7 +143,7 @@ div, ul {
   display: grid;
   grid-auto-flow: column;
   gap: 2.2rem;
-  margin-right: 2.6rem;
+  margin-right: 2.5rem;
   align-items: center;
   /* min-width: 30%; */
   /* justify-content: end; */
@@ -160,6 +165,66 @@ div, ul {
   object-fit: cover;
   border-radius: 50%;
 }
+
+/* HEADER DOWN */
+
+.header-down {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.user-info {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 1.8rem;
+  align-items: center;
+  margin-left: 0.4rem;
+}
+
+.user-icon {
+  width: 60px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-name {
+  min-width: max-content;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.user-name p {
+  margin: 0;
+}
+
+.user-name .greeting {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.user-actions button {
+  background-color: var(--header-button-background);
+  color: var(--header-button-font);
+  border: none;
+  /* padding: 0.8rem 2.4rem; */
+  height: 32px;
+  width: 78px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* MAIN */
 
 .main {
   display: grid;
