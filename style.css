@@ -352,10 +352,36 @@ div, ul {
   padding-bottom: 1.4rem;
 }
 
+/* TRENDING */
+
 .trending {
   /* height: 300px; */
 }
 
 .trending-items-container {
   background-color: var(--trending-background);
+  display: grid;
+  gap: 2rem;
+  padding: 1.8rem;
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.trending-item img {
+  width: 40px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.trending .project-creator {
+  color: black;
+  margin-bottom: 0.2rem;
 }
