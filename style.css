@@ -18,7 +18,6 @@
   box-sizing: inherit;
 }
 
-/* TODO: change project card min width? */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -284,7 +283,7 @@ div, ul {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   row-gap: 26px;
   column-gap: 22px;
 }
