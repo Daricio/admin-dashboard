@@ -18,9 +18,7 @@
   box-sizing: inherit;
 }
 
-/* TODO: cursor pointer
-reconsider main section layout, so trending and projects 3rd row are on the same line
-announcements and trending gap */
+/* TODO: change project card min width? */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -249,7 +247,10 @@ div, ul {
   display: grid;
   grid-template-columns: 1fr 230px;
   grid-template-rows: auto 1fr;
-  gap: 2rem;
+  /* gap: 2rem; */
+  column-gap: 2rem;
+  row-gap: 1.8rem;
+  /* align-content: start; */
   align-items: start;
   background-color: var(--main-background);
   padding: 1.8rem 2.6rem 1.8rem 1.8rem;
@@ -377,13 +378,15 @@ div, ul {
 
 .trending {
   /* height: 300px; */
+  /* align-self: end; */
 }
 
 .trending-items-container {
   background-color: var(--trending-background);
   display: grid;
-  gap: 2rem;
+  gap: 1.6rem;
   padding: 1.8rem;
+  padding-bottom: 2.4rem;
 }
 
 .trending-item {
@@ -396,7 +399,7 @@ div, ul {
 }
 
 .trending-item img {
-  width: 40px;
+  width: 35px;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
