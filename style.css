@@ -18,7 +18,9 @@
   box-sizing: inherit;
 }
 
-/* TODO: announcements styling */
+/* TODO: cursor pointer
+reconsider main section layout, so trending and projects 3rd row are on the same line
+announcements and trending gap */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -26,6 +28,11 @@ body {
   display: grid;
   grid-template-columns: 240px 1fr;
   grid-template-rows: auto 1fr;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 div, ul {
@@ -69,6 +76,11 @@ div, ul {
   display: grid;
   gap: 2rem;
 }
+
+/* .nav a {
+  color: var(--sidebar-font);
+  text-decoration: none;
+} */
 
 .icon {
   width: 20px;
@@ -150,6 +162,10 @@ div, ul {
   /* justify-content: end; */
 }
 
+.notifications {
+  cursor: pointer;
+}
+
 .current-user-info {
   display: grid;
   grid-auto-flow: column;
@@ -224,6 +240,7 @@ div, ul {
   border-radius: 20px;
   font-size: 1.2rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -307,6 +324,10 @@ div, ul {
   grid-auto-flow: column;
   justify-content: end;
   gap: 2.2rem;
+}
+
+.project-actions .icon {
+  cursor: pointer;
 }
 
 .share {
